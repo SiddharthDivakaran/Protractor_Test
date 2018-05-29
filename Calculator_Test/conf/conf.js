@@ -7,7 +7,8 @@ timestmp=today.getMonth()+1+'-'+today.getDate()+'-'+today.getFullYear()+'-'+toda
 exports.config={
 
     framework:'jasmine',
-    seleniumAddress:"http://loaclhost:4444/wd/hub",
+    //seleniumAddress:"http://loaclhost:4444/wd/hub",
+    directConnect:true,
     specs:['../test/TestForAddition.js'],
     capabilities:{
         'browserName':'chrome'
