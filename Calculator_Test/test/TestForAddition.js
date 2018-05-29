@@ -6,9 +6,12 @@ describe('test calculator operation',function(){
 
     it('test addition functionality of calculator',function(){
         calc.enterNumberInFirstBox(5);
+        browser.sleep(2000);
         calc.enterNumberInSecondBox(6);
-        calc.selectOperator('+');
-        calc.clickOnGo();
+        browser.sleep(2000);
+        calc.selectOperator('-');
+        browser.sleep(4000);
+       // calc.clickOnGo();
     });
     
 });
